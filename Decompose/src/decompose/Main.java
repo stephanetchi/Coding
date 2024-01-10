@@ -1,7 +1,7 @@
 package decompose;
 
 import java.util.Scanner;
-
+import java.util.ArrayList;
 public class Main {
 	static Scanner sc = new Scanner(System.in);
 	static int Nombre = 0;
@@ -57,7 +57,8 @@ public class Main {
 		System.out.println("  Bienvenue sur notre outil de decomposition de nombre  ");
 		SetNumbers();
 		System.out.println("Nombre de chiffre " + NombreDeChiffre(Nombre));
-
+		ArrayList<?> i = new ArrayList<int[]>();
+		
 		int[] p = new int[NombreDeChiffre(Nombre)];
 		decompose(Nombre, p, NombreDeChiffre(Nombre));
 
